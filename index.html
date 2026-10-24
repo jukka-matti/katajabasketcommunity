@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c285b">
+  <meta name="description" content="Katajan ottelut, joukkueet ja Joensuun koripallotapahtumat yhdessä paikassa. Viikon pelit, Jet Set -katukoris ja Winter Basket.">
+  <title>Kataja Basket Community – ottelut, joukkueet ja tapahtumat</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/app.mjs"></script>
+</head>
+<body>
+  <main class="site-wrap" id="kataja-scoreboard">
+    <header class="ks-top">
+      <div class="ks-brand-row"><span class="ks-mark" aria-hidden="true">K</span><div><div class="ks-brand">KATAJA</div><div class="ks-brand-sub">BASKET COMMUNITY</div></div></div>
+      <nav class="ks-nav" aria-label="Päänavigaatio">
+        <a class="cursor-interaction" id="ks-nav-calendar" href="#/ottelut" aria-current="page">Ottelut</a>
+        <a class="cursor-interaction" id="ks-nav-teams" href="#/joukkueet">Joukkueet</a>
+        <a class="cursor-interaction" id="ks-nav-events" href="#/tapahtumat">Tapahtumat</a>
+      </nav>
+    </header>
+    <div class="ks-demo" id="ks-demo-banner" hidden><span>Luonnos · kuvitteelliset ottelut ja tulokset</span><button id="ks-exit-demo" type="button">Palaa oikeisiin tietoihin →</button></div>
+    <div class="ks-data-status" id="ks-data-status" role="status"></div>
+    <div class="ks-content">
+      <section id="ks-status-view" class="ks-status-view" aria-live="polite">
+        <div class="ks-overline">Katajan ottelukalenteri</div>
+        <h1 class="ks-page-title" id="ks-status-title">Ladataan ottelutietoja</h1>
+        <p class="ks-page-intro" id="ks-status-message">Haetaan viimeisintä viikoittaista koostetta.</p>
+        <div class="ks-status-actions"><button class="ks-primary" id="ks-demo-button" type="button" hidden>Katso esimerkkiä →</button><button class="ks-secondary" id="ks-retry-button" type="button" hidden>Yritä uudelleen</button></div>
+      </section>
+      <section id="ks-calendar-view" aria-label="Ottelukalenteri" hidden>
+        <h1 class="ks-page-title">Koko seuran peliviikko.</h1>
+        <p class="ks-page-intro">Löydä peli. Avaa reitti. Seuraa joukkuetta.</p>
+        <div class="ks-coverage" id="ks-coverage" hidden></div>
+        <div class="ks-calendar-layout">
+          <div class="ks-calendar-main">
+            <div class="ks-filter-panel">
+              <div class="ks-week-row">
+                <div><div class="ks-week-overline" id="ks-week-number"></div><div class="ks-week-label" id="ks-week-label"></div></div>
+                <div class="ks-arrows"><button class="ks-arrow cursor-interaction" id="ks-prev" type="button" aria-label="Edellinen viikko">‹</button><button class="ks-arrow cursor-interaction" id="ks-next" type="button" aria-label="Seuraava viikko">›</button></div>
+              </div>
+              <button class="ks-today" id="ks-this-week" type="button">Tämä viikko</button>
+              <div class="ks-filter-row">
+                <div><span class="ks-field-label">Pelipaikka</span><div class="ks-segment" role="group" aria-label="Pelipaikan rajaus"><button class="cursor-interaction" type="button" data-ks-location="joensuu" aria-pressed="true">Joensuussa</button><button class="cursor-interaction" type="button" data-ks-location="all" aria-pressed="false">Kaikki paikat</button></div></div>
+                <label><span class="ks-field-label">Joukkue</span><select class="ks-select cursor-interaction" id="ks-team-filter" aria-label="Rajaa joukkueen mukaan"><option value="all">Kaikki joukkueet</option><option value="junior">Juniorit</option></select></label>
+              </div>
+            </div>
+            <p class="ks-list-meta" id="ks-list-meta" aria-live="polite"></p>
+            <div id="ks-games"></div>
+          </div>
+          <aside class="ks-aside" aria-label="Joukkueiden pikavalinta"><h2 class="ks-section-label">Joukkueet</h2><div id="ks-team-rail"></div><p class="ks-aside-note">Joukkueen sivulta löydät sarjatilanteen, tulokset ja tulevat pelit.</p></aside>
+        </div>
+      </section>
+      <section id="ks-teams-view" aria-label="Joukkueet" hidden><h1 class="ks-page-title">Joukkueet, yhdessä paikassa.</h1><p class="ks-page-intro">Valitse joukkue ja katso sen pelit sekä sarjatilanne.</p><div class="ks-team-grid" id="ks-team-grid"></div></section>
+      <section id="ks-detail-view" aria-label="Joukkueen ottelut ja sarjatilanne" hidden>
+        <div class="ks-back-row"><a class="ks-back cursor-interaction" id="ks-back" href="#/ottelut">← Takaisin otteluihin</a><label class="ks-detail-select"><span class="ks-field-label">Vaihda joukkuetta</span><select class="ks-select cursor-interaction" id="ks-detail-team" aria-label="Vaihda joukkuesivun joukkuetta"></select></label></div>
+        <div id="ks-team-header"></div>
+        <label class="ks-competition-select" id="ks-competition-field" hidden><span class="ks-field-label">Sarja ja vaihe</span><select class="ks-select" id="ks-competition" aria-label="Valitse joukkueen sarja"></select></label>
+        <div class="ks-coverage" id="ks-team-coverage" hidden></div>
+        <div id="ks-next-game"></div>
+        <div class="ks-detail-grid"><section class="ks-panel" id="ks-standings-panel" aria-label="Joukkueen sarjataulukko"></section><section class="ks-panel" id="ks-results-panel" aria-label="Viimeiset viisi ottelua"></section></div>
+        <section class="ks-upcoming" id="ks-upcoming" aria-label="Muut tulevat ottelut"></section>
+      </section>
+      <section id="ks-events-view" aria-label="Koripallotapahtumat" hidden></section>
+      <section id="ks-event-view" aria-label="Tapahtuman tiedot ja historia" hidden></section>
+    </div>
+    <footer class="ks-footer"><span id="ks-footer-status">Ottelutiedot päivitetään viikoittaisena koosteena.</span><span>Ajat Suomen aikaa · Europe/Helsinki</span></footer>
+    <div class="ks-announcement" id="ks-announcement" aria-live="polite" aria-atomic="true"></div>
+  </main>
+  <noscript><p class="ks-noscript">Ottelukalenterin näyttäminen tarvitsee JavaScriptin. Alkuperäisiä ottelutietoja löydät <a href="https://tulospalvelu.basket.fi/">Basket.fi:n tulospalvelusta</a>.</p></noscript>
+</body>
+</html>

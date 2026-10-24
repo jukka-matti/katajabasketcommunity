@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-24T16:46:21Z",
+  "sources": [
+    {"id":"jetset-2026","label":"FairGame · Jet Set 2026","url":"https://fairgame.is/en/tournaments/ip/jet-set-3x3-katukoris","checkedAt":"2026-10-24"},
+    {"id":"jetset-2026-teams","label":"FairGame · vuoden 2026 joukkueet","url":"https://fairgame.is/en/tournaments/ip/jet-set-3x3-katukoris/teams","checkedAt":"2026-10-24"},
+    {"id":"jetset-2026-matches","label":"FairGame · vuoden 2026 ottelut","url":"https://fairgame.is/en/tournaments/ip/jet-set-3x3-katukoris/matches","checkedAt":"2026-10-24"},
+    {"id":"jetset-2026-standings","label":"FairGame · vuoden 2026 sarjataulukot","url":"https://fairgame.is/en/tournaments/ip/jet-set-3x3-katukoris/standings","checkedAt":"2026-10-24"},
+    {"id":"jetset-2010","label":"Kataja Basket · katukoris 2010","url":"https://www.katajabasket.fi/edustusjoukkue/uutiset/2010-11/uutiset553.php","checkedAt":"2026-10-24"},
+    {"id":"jetset-2023","label":"Riveria · katukoristurnaus 2023","url":"https://riveria.fi/riveria-katukoristurnauksessa/","checkedAt":"2026-10-24"},
+    {"id":"winter-2025","label":"Basket.fi · Winter Basket 2025","url":"https://basket.fi/uutiset/tervetuloa-lauantaina-15-2-joensuussa-motonet-areenalla-pelattavaan-talven-kovimpaan-3x3-korismitteloon/","checkedAt":"2026-10-24"},
+    {"id":"winter-2023","label":"ISYY · Winter Basket 2023","url":"https://www.isyy.fi/ajankohtaista/uutiskirje/uutiskirjearkisto/isyyn-uutiskirje-wiikko-arsyke-joensuu-viikko-62023.html","checkedAt":"2026-10-24"},
+    {"id":"motonet-areena","label":"Kataja Basket · Motonet Areena","url":"https://www.katajabasket.fi/motonet-areena/","checkedAt":"2026-10-24"}
+  ],
+  "events": [
+    {
+      "id":"jet-set-katukoris",
+      "title":"Jet Set -katukoris",
+      "eyebrow":"Joensuun katukorisperinne",
+      "summary":"Oma porukka, yksi kori ja yhteinen pelipäivä. Jet Set kokoaa Joensuun korisyhteisön kentän laidalle ja peliin.",
+      "description":[
+        "Jet Set -katukoris on pitkän linjan joensuulainen turnaus. Katajan vuoden 2010 uutisessa puhuttiin jo 19. turnauksesta. Vuosien varrella mukana on ollut yritysten, oppilaitosten ja kaveriporukoiden joukkueita.",
+        "Tältä sivulta löydät viimeisimmän lähteistetyn turnauskoosteen sekä muistoja aiemmilta vuosilta. Vuoden 2026 joukkueet, ohjelma ja taulukot perustuvat FairGamessa julkaistuihin tietoihin. Seuraavan turnauksen osallistumistiedot lisätään niiden vahvistuttua."
+      ],
+      "seasonLabel":"Loppukesä ja alkusyksy",
+      "currentEdition":{
+        "year":2026,
+        "status":"completed",
+        "dateLabel":"Lauantai 5.9.2026",
+        "venue":{"name":"Motonet Areena","city":"Joensuu","address":"Kisapolku 1, 80110 Joensuu"},
+        "registrationUrl":null,
+        "scheduleUrl":"https://fairgame.is/en/tournaments/ip/jet-set-3x3-katukoris/matches",
+        "teams":[
+          {"name":"BC Kolmen pisteen krapu","division":"Fun"},
+          {"name":"Bepop","division":"Fun"},
+          {"name":"Big Boiler Brand","division":"Fun"},
+          {"name":"Drunkpirots","division":"Fun"},
+          {"name":"Isät ja Pojat","division":"Fun"},
+          {"name":"Kotileipomo Riikonen","division":"Fun"},
+          {"name":"Team Paps","division":"Fun"},
+          {"name":"Allstars","division":"Pro"},
+          {"name":"Hyrskeen Junioriosasto","division":"Pro"},
+          {"name":"Joensuu 2.0","division":"Pro"},
+          {"name":"Kataja Basket Jytkyt","division":"Pro"},
+          {"name":"Keräilyerä","division":"Pro"},
+          {"name":"Ukon Relocation","division":"Pro"}
+        ],
+        "schedule":[
+          {"time":"12.00","label":"Ensimmäiset ottelut: Fun ja Pro","court":"Kentät 1–3"},
+          {"time":"14.45","label":"Julkaistun ohjelman viimeiset ottelut alkavat","court":"Kentät 1–3"},
+          {"time":null,"label":"Yhteensä 36 ottelua. Kaikki otteluparit ja tulokset löytyvät alkuperäisestä otteluohjelmasta.","court":null}
+        ],
+        "winners":[
+          {"division":"Pro · sarjataulukon 1. sija, 5 voittoa","team":"Ukon Relocation"},
+          {"division":"Fun · sarjataulukon 1. sija, 6 voittoa","team":"BC Kolmen pisteen krapu"}
+        ],
+        "sourceIds":["jetset-2026","jetset-2026-teams","jetset-2026-matches","jetset-2026-standings","motonet-areena"]
+      },
+      "history":[
+        {"year":2023,"title":"Riverian henkilöstö ja opiskelijat mukana","text":"Turnaus pelattiin 12.8.2023 Motonet-hallissa. Riveria osallistui kahdella joukkueella: henkilöstön ja opiskelijoiden porukoilla. Mukana oli myös useita paikallisia yritysjoukkueita.","sourceIds":["jetset-2023"]},
+        {"year":2010,"title":"19. turnaus ja kaksi sarjavoittajaa","text":"14.8.2010 pelattuun turnaukseen osallistui 13 joukkuetta. Pro-sarjan finaalissa Kirjanpitotoimisto Lehtinen voitti JetSetBarin 10–4. Champion-sarjan finaalissa Karjalainen voitti Varaosamaailman 7–4.","sourceIds":["jetset-2010"]}
+      ],
+      "sourceIds":["jetset-2010","jetset-2023","jetset-2026"]
+    },
+    {
+      "id":"winter-basket",
+      "title":"Winter Basket",
+      "eyebrow":"3x3-korista keskellä talvea",
+      "summary":"Talvinen syy koota porukka yhteen. Pelaamista, kannustamista ja kohtaamisia Joensuun korisyhteisölle.",
+      "description":[
+        "Winter Basket tuo katukoriksen talveen. Vahvistetuissa vuosien 2023 ja 2025 tapahtumissa pelattiin helmikuussa Motonet Areenalla. Vuoden 2025 tapahtuman järjesti Kataja Basket Talents, ja mukana olivat Fun- ja kilpasarjat.",
+        "Kokoamme tänne seuraavan turnauksen osallistumisohjeet, joukkueet ja aikataulun, kun tiedot on vahvistettu. Pelipäivän jälkeen sivulle jäävät tulokset ja vuoden tarina. Aiempien tapahtumien tiedot löydät historiasta."
+      ],
+      "seasonLabel":"Talven 3x3",
+      "currentEdition":{
+        "year":null,
+        "status":"unconfirmed",
+        "dateLabel":"Seuraavan turnauksen ajankohta vahvistamatta",
+        "venue":null,
+        "registrationUrl":null,
+        "scheduleUrl":null,
+        "teams":[],
+        "schedule":[],
+        "winners":[],
+        "sourceIds":[]
+      },
+      "history":[
+        {"year":2025,"title":"Kolmas Winter Basket 15. helmikuuta","text":"Kataja Basket Talentsin turnaus järjestettiin 15.2.2025 klo 12 alkaen Motonet Areenalla. Kolmatta kertaa järjestetyn tapahtuman ohjelmassa olivat Fun- ja kilpasarjat. Vahvistettuja voittajatietoja ei ole vielä lisätty tähän historiaan.","sourceIds":["winter-2025"]},
+        {"year":2023,"title":"Helmikuun pelipäivä Motonet Areenalla","text":"Winter Basket 2023 järjestettiin 25.2.2023 klo 13 alkaen Motonet Areenalla. Tapahtumassa pelattiin 3 vastaan 3 -pelejä katukorissäännöillä. Järjestäjiksi ilmoitettiin Kataja Basket, Kataja Basket Talents, Pohjois-Karjalan Nuoret Yrittäjät ja Riveria.","sourceIds":["winter-2023"]}
+      ],
+      "sourceIds":["winter-2025","winter-2023"]
+    }
+  ]
+}

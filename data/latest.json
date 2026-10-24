@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "mode": "empty",
+  "generatedAt": null,
+  "timezone": "Europe/Helsinki",
+  "sources": [],
+  "teams": [],
+  "competitions": [],
+  "venues": [],
+  "matches": [],
+  "standings": [],
+  "coverage": {
+    "teamIds": [],
+    "note": "Ensimmäinen viikoittainen haku on vielä tekemättä."
+  }
+}

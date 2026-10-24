@@ -1,0 +1,1350 @@
+{
+  "schemaVersion": 1,
+  "mode": "demo",
+  "generatedAt": "2026-10-26T06:00:00+02:00",
+  "timezone": "Europe/Helsinki",
+  "sources": [
+    {
+      "id": "demo:source",
+      "label": "Kuvitteellinen esimerkkiaineisto",
+      "url": "https://example.com/kataja-demo",
+      "fetchedAt": "2026-10-26T06:00:00+02:00"
+    }
+  ],
+  "teams": [
+    {
+      "id": "kataja:edustus",
+      "name": "Miesten edustus",
+      "shortName": "Kataja Basket",
+      "category": "adult",
+      "tracked": true,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:A",
+      "name": "Joukkue A",
+      "shortName": "Joukkue A",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:B",
+      "name": "Joukkue B",
+      "shortName": "Joukkue B",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:C",
+      "name": "Joukkue C",
+      "shortName": "Joukkue C",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:D",
+      "name": "Joukkue D",
+      "shortName": "Joukkue D",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:E",
+      "name": "Joukkue E",
+      "shortName": "Joukkue E",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:F",
+      "name": "Joukkue F",
+      "shortName": "Joukkue F",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "demo:edustus:G",
+      "name": "Joukkue G",
+      "shortName": "Joukkue G",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:edustus"
+      ]
+    },
+    {
+      "id": "kataja:kba-miehet",
+      "name": "KBA miehet",
+      "shortName": "KBA miehet",
+      "category": "adult",
+      "tracked": true,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:A",
+      "name": "Joukkue A",
+      "shortName": "Joukkue A",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:B",
+      "name": "Joukkue B",
+      "shortName": "Joukkue B",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:C",
+      "name": "Joukkue C",
+      "shortName": "Joukkue C",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:D",
+      "name": "Joukkue D",
+      "shortName": "Joukkue D",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:E",
+      "name": "Joukkue E",
+      "shortName": "Joukkue E",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:F",
+      "name": "Joukkue F",
+      "shortName": "Joukkue F",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "demo:kba-miehet:G",
+      "name": "Joukkue G",
+      "shortName": "Joukkue G",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-miehet"
+      ]
+    },
+    {
+      "id": "kataja:kba-naiset",
+      "name": "KBA naiset",
+      "shortName": "KBA naiset",
+      "category": "adult",
+      "tracked": true,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:A",
+      "name": "Joukkue A",
+      "shortName": "Joukkue A",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:B",
+      "name": "Joukkue B",
+      "shortName": "Joukkue B",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:C",
+      "name": "Joukkue C",
+      "shortName": "Joukkue C",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:D",
+      "name": "Joukkue D",
+      "shortName": "Joukkue D",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:E",
+      "name": "Joukkue E",
+      "shortName": "Joukkue E",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:F",
+      "name": "Joukkue F",
+      "shortName": "Joukkue F",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "demo:kba-naiset:G",
+      "name": "Joukkue G",
+      "shortName": "Joukkue G",
+      "category": "adult",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:kba-naiset"
+      ]
+    },
+    {
+      "id": "kataja:u14-tytot",
+      "name": "U14-tytöt",
+      "shortName": "Kataja U14",
+      "category": "junior",
+      "tracked": true,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:A",
+      "name": "Joukkue A",
+      "shortName": "Joukkue A",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:B",
+      "name": "Joukkue B",
+      "shortName": "Joukkue B",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:C",
+      "name": "Joukkue C",
+      "shortName": "Joukkue C",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:D",
+      "name": "Joukkue D",
+      "shortName": "Joukkue D",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:E",
+      "name": "Joukkue E",
+      "shortName": "Joukkue E",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:F",
+      "name": "Joukkue F",
+      "shortName": "Joukkue F",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "demo:u14-tytot:G",
+      "name": "Joukkue G",
+      "shortName": "Joukkue G",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u14-tytot"
+      ]
+    },
+    {
+      "id": "kataja:u12-pojat",
+      "name": "U12-pojat",
+      "shortName": "Kataja U12",
+      "category": "junior",
+      "tracked": true,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:A",
+      "name": "Joukkue A",
+      "shortName": "Joukkue A",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:B",
+      "name": "Joukkue B",
+      "shortName": "Joukkue B",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:C",
+      "name": "Joukkue C",
+      "shortName": "Joukkue C",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:D",
+      "name": "Joukkue D",
+      "shortName": "Joukkue D",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:E",
+      "name": "Joukkue E",
+      "shortName": "Joukkue E",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:F",
+      "name": "Joukkue F",
+      "shortName": "Joukkue F",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    },
+    {
+      "id": "demo:u12-pojat:G",
+      "name": "Joukkue G",
+      "shortName": "Joukkue G",
+      "category": "junior",
+      "tracked": false,
+      "competitionIds": [
+        "demo:competition:u12-pojat"
+      ]
+    }
+  ],
+  "competitions": [
+    {
+      "id": "demo:competition:edustus",
+      "name": "Korisliiga · esimerkkisarja",
+      "season": "2026-27",
+      "phase": "Esimerkkilohko"
+    },
+    {
+      "id": "demo:competition:kba-miehet",
+      "name": "Miesten esimerkkisarja",
+      "season": "2026-27",
+      "phase": "Esimerkkilohko"
+    },
+    {
+      "id": "demo:competition:kba-naiset",
+      "name": "Naisten esimerkkisarja",
+      "season": "2026-27",
+      "phase": "Esimerkkilohko"
+    },
+    {
+      "id": "demo:competition:u14-tytot",
+      "name": "U14-tyttöjen esimerkkisarja",
+      "season": "2026-27",
+      "phase": "Esimerkkilohko"
+    },
+    {
+      "id": "demo:competition:u12-pojat",
+      "name": "U12-poikien esimerkkisarja",
+      "season": "2026-27",
+      "phase": "Esimerkkilohko"
+    }
+  ],
+  "venues": [
+    {
+      "id": "venue:motonet",
+      "name": "Motonet Areena",
+      "city": "Joensuu",
+      "address": "Kisapolku 1, 80110 Joensuu"
+    }
+  ],
+  "matches": [
+    {
+      "id": "demo:match:edustus:2026-10-24:A",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "kataja:edustus",
+      "awayTeamId": "demo:edustus:A",
+      "startsAt": "2026-10-24T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 89,
+      "awayScore": 77,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-10-24:A"
+    },
+    {
+      "id": "demo:match:edustus:2026-10-18:B",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "demo:edustus:B",
+      "awayTeamId": "kataja:edustus",
+      "startsAt": "2026-10-18T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 81,
+      "awayScore": 73,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-10-18:B"
+    },
+    {
+      "id": "demo:match:edustus:2026-10-11:C",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "kataja:edustus",
+      "awayTeamId": "demo:edustus:C",
+      "startsAt": "2026-10-11T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 95,
+      "awayScore": 84,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-10-11:C"
+    },
+    {
+      "id": "demo:match:edustus:2026-10-04:D",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "demo:edustus:D",
+      "awayTeamId": "kataja:edustus",
+      "startsAt": "2026-10-04T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 76,
+      "awayScore": 82,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-10-04:D"
+    },
+    {
+      "id": "demo:match:edustus:2026-10-01:E",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "kataja:edustus",
+      "awayTeamId": "demo:edustus:E",
+      "startsAt": "2026-10-01T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 78,
+      "awayScore": 85,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-10-01:E"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-10-24:A",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "kataja:kba-miehet",
+      "awayTeamId": "demo:kba-miehet:A",
+      "startsAt": "2026-10-24T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 87,
+      "awayScore": 79,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-10-24:A"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-10-18:B",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "demo:kba-miehet:B",
+      "awayTeamId": "kataja:kba-miehet",
+      "startsAt": "2026-10-18T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 82,
+      "awayScore": 91,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-10-18:B"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-10-11:C",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "kataja:kba-miehet",
+      "awayTeamId": "demo:kba-miehet:C",
+      "startsAt": "2026-10-11T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 72,
+      "awayScore": 78,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-10-11:C"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-10-04:D",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "demo:kba-miehet:D",
+      "awayTeamId": "kataja:kba-miehet",
+      "startsAt": "2026-10-04T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 75,
+      "awayScore": 86,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-10-04:D"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-10-01:E",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "kataja:kba-miehet",
+      "awayTeamId": "demo:kba-miehet:E",
+      "startsAt": "2026-10-01T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 83,
+      "awayScore": 80,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-10-01:E"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-10-24:A",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "kataja:kba-naiset",
+      "awayTeamId": "demo:kba-naiset:A",
+      "startsAt": "2026-10-24T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 65,
+      "awayScore": 72,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-10-24:A"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-10-18:B",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "demo:kba-naiset:B",
+      "awayTeamId": "kataja:kba-naiset",
+      "startsAt": "2026-10-18T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 68,
+      "awayScore": 77,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-10-18:B"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-10-11:C",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "kataja:kba-naiset",
+      "awayTeamId": "demo:kba-naiset:C",
+      "startsAt": "2026-10-11T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 81,
+      "awayScore": 75,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-10-11:C"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-10-04:D",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "demo:kba-naiset:D",
+      "awayTeamId": "kataja:kba-naiset",
+      "startsAt": "2026-10-04T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 74,
+      "awayScore": 69,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-10-04:D"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-10-01:E",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "kataja:kba-naiset",
+      "awayTeamId": "demo:kba-naiset:E",
+      "startsAt": "2026-10-01T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 73,
+      "awayScore": 60,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-10-01:E"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-10-24:A",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "kataja:u14-tytot",
+      "awayTeamId": "demo:u14-tytot:A",
+      "startsAt": "2026-10-24T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 62,
+      "awayScore": 51,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-10-24:A"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-10-18:B",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "demo:u14-tytot:B",
+      "awayTeamId": "kataja:u14-tytot",
+      "startsAt": "2026-10-18T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 45,
+      "awayScore": 58,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-10-18:B"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-10-11:C",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "kataja:u14-tytot",
+      "awayTeamId": "demo:u14-tytot:C",
+      "startsAt": "2026-10-11T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 47,
+      "awayScore": 55,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-10-11:C"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-10-04:D",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "demo:u14-tytot:D",
+      "awayTeamId": "kataja:u14-tytot",
+      "startsAt": "2026-10-04T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 59,
+      "awayScore": 66,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-10-04:D"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-10-01:E",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "kataja:u14-tytot",
+      "awayTeamId": "demo:u14-tytot:E",
+      "startsAt": "2026-10-01T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 50,
+      "awayScore": 56,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-10-01:E"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-10-24:A",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "kataja:u12-pojat",
+      "awayTeamId": "demo:u12-pojat:A",
+      "startsAt": "2026-10-24T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 43,
+      "awayScore": 51,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-10-24:A"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-10-18:B",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "demo:u12-pojat:B",
+      "awayTeamId": "kataja:u12-pojat",
+      "startsAt": "2026-10-18T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 48,
+      "awayScore": 56,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-10-18:B"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-10-11:C",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "kataja:u12-pojat",
+      "awayTeamId": "demo:u12-pojat:C",
+      "startsAt": "2026-10-11T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 39,
+      "awayScore": 44,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-10-11:C"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-10-04:D",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "demo:u12-pojat:D",
+      "awayTeamId": "kataja:u12-pojat",
+      "startsAt": "2026-10-04T17:00:00+03:00",
+      "status": "final",
+      "venueId": null,
+      "homeScore": 53,
+      "awayScore": 45,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-10-04:D"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-10-01:E",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "kataja:u12-pojat",
+      "awayTeamId": "demo:u12-pojat:E",
+      "startsAt": "2026-10-01T17:00:00+03:00",
+      "status": "final",
+      "venueId": "venue:motonet",
+      "homeScore": 59,
+      "awayScore": 50,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-10-01:E"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-10-31:C",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "kataja:u14-tytot",
+      "awayTeamId": "demo:u14-tytot:C",
+      "startsAt": "2026-10-31T11:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-10-31:C"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-10-31:D",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "kataja:u12-pojat",
+      "awayTeamId": "demo:u12-pojat:D",
+      "startsAt": "2026-10-31T13:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-10-31:D"
+    },
+    {
+      "id": "demo:match:edustus:2026-10-31:A",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "kataja:edustus",
+      "awayTeamId": "demo:edustus:A",
+      "startsAt": "2026-10-31T18:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-10-31:A"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-11-01:B",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "kataja:kba-naiset",
+      "awayTeamId": "demo:kba-naiset:B",
+      "startsAt": "2026-11-01T13:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-11-01:B"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-11-01:D",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "kataja:kba-miehet",
+      "awayTeamId": "demo:kba-miehet:D",
+      "startsAt": "2026-11-01T15:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-11-01:D"
+    },
+    {
+      "id": "demo:match:edustus:2026-11-04:F",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "demo:edustus:F",
+      "awayTeamId": "kataja:edustus",
+      "startsAt": "2026-11-04T18:30:00+02:00",
+      "status": "scheduled",
+      "venueId": null,
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-11-04:F"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-11-06:C",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "demo:kba-miehet:C",
+      "awayTeamId": "kataja:kba-miehet",
+      "startsAt": "2026-11-06T18:30:00+02:00",
+      "status": "scheduled",
+      "venueId": null,
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-11-06:C"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-11-07:A",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "demo:u14-tytot:A",
+      "awayTeamId": "kataja:u14-tytot",
+      "startsAt": "2026-11-07T11:00:00+02:00",
+      "status": "scheduled",
+      "venueId": null,
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-11-07:A"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-11-07:B",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "demo:u12-pojat:B",
+      "awayTeamId": "kataja:u12-pojat",
+      "startsAt": "2026-11-07T13:00:00+02:00",
+      "status": "scheduled",
+      "venueId": null,
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-11-07:B"
+    },
+    {
+      "id": "demo:match:edustus:2026-11-07:C",
+      "competitionId": "demo:competition:edustus",
+      "homeTeamId": "kataja:edustus",
+      "awayTeamId": "demo:edustus:C",
+      "startsAt": "2026-11-07T17:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/edustus:2026-11-07:C"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-11-08:E",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "kataja:kba-naiset",
+      "awayTeamId": "demo:kba-naiset:E",
+      "startsAt": "2026-11-08T13:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-11-08:E"
+    },
+    {
+      "id": "demo:match:kba-miehet:2026-11-08:A",
+      "competitionId": "demo:competition:kba-miehet",
+      "homeTeamId": "kataja:kba-miehet",
+      "awayTeamId": "demo:kba-miehet:A",
+      "startsAt": "2026-11-08T15:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-miehet:2026-11-08:A"
+    },
+    {
+      "id": "demo:match:u14-tytot:2026-11-14:E",
+      "competitionId": "demo:competition:u14-tytot",
+      "homeTeamId": "kataja:u14-tytot",
+      "awayTeamId": "demo:u14-tytot:E",
+      "startsAt": "2026-11-14T11:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u14-tytot:2026-11-14:E"
+    },
+    {
+      "id": "demo:match:u12-pojat:2026-11-14:F",
+      "competitionId": "demo:competition:u12-pojat",
+      "homeTeamId": "kataja:u12-pojat",
+      "awayTeamId": "demo:u12-pojat:F",
+      "startsAt": "2026-11-14T13:00:00+02:00",
+      "status": "scheduled",
+      "venueId": "venue:motonet",
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/u12-pojat:2026-11-14:F"
+    },
+    {
+      "id": "demo:match:kba-naiset:2026-11-15:F",
+      "competitionId": "demo:competition:kba-naiset",
+      "homeTeamId": "demo:kba-naiset:F",
+      "awayTeamId": "kataja:kba-naiset",
+      "startsAt": "2026-11-15T13:00:00+02:00",
+      "status": "scheduled",
+      "venueId": null,
+      "homeScore": null,
+      "awayScore": null,
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/matches/kba-naiset:2026-11-15:F"
+    }
+  ],
+  "standings": [
+    {
+      "competitionId": "demo:competition:edustus",
+      "status": "available",
+      "rows": [
+        {
+          "position": 1,
+          "teamId": "demo:edustus:A",
+          "played": 8,
+          "wins": 7,
+          "losses": 1,
+          "points": null
+        },
+        {
+          "position": 2,
+          "teamId": "demo:edustus:B",
+          "played": 8,
+          "wins": 6,
+          "losses": 2,
+          "points": null
+        },
+        {
+          "position": 3,
+          "teamId": "kataja:edustus",
+          "played": 8,
+          "wins": 5,
+          "losses": 3,
+          "points": null
+        },
+        {
+          "position": 4,
+          "teamId": "demo:edustus:C",
+          "played": 8,
+          "wins": 4,
+          "losses": 4,
+          "points": null
+        },
+        {
+          "position": 5,
+          "teamId": "demo:edustus:D",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 6,
+          "teamId": "demo:edustus:E",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 7,
+          "teamId": "demo:edustus:F",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        },
+        {
+          "position": 8,
+          "teamId": "demo:edustus:G",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        }
+      ],
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/standings/edustus"
+    },
+    {
+      "competitionId": "demo:competition:kba-miehet",
+      "status": "available",
+      "rows": [
+        {
+          "position": 1,
+          "teamId": "demo:kba-miehet:A",
+          "played": 8,
+          "wins": 7,
+          "losses": 1,
+          "points": null
+        },
+        {
+          "position": 2,
+          "teamId": "kataja:kba-miehet",
+          "played": 8,
+          "wins": 6,
+          "losses": 2,
+          "points": null
+        },
+        {
+          "position": 3,
+          "teamId": "demo:kba-miehet:B",
+          "played": 8,
+          "wins": 5,
+          "losses": 3,
+          "points": null
+        },
+        {
+          "position": 4,
+          "teamId": "demo:kba-miehet:C",
+          "played": 8,
+          "wins": 4,
+          "losses": 4,
+          "points": null
+        },
+        {
+          "position": 5,
+          "teamId": "demo:kba-miehet:D",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 6,
+          "teamId": "demo:kba-miehet:E",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 7,
+          "teamId": "demo:kba-miehet:F",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        },
+        {
+          "position": 8,
+          "teamId": "demo:kba-miehet:G",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        }
+      ],
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/standings/kba-miehet"
+    },
+    {
+      "competitionId": "demo:competition:kba-naiset",
+      "status": "available",
+      "rows": [
+        {
+          "position": 1,
+          "teamId": "demo:kba-naiset:A",
+          "played": 8,
+          "wins": 7,
+          "losses": 1,
+          "points": null
+        },
+        {
+          "position": 2,
+          "teamId": "demo:kba-naiset:B",
+          "played": 8,
+          "wins": 6,
+          "losses": 2,
+          "points": null
+        },
+        {
+          "position": 3,
+          "teamId": "demo:kba-naiset:C",
+          "played": 8,
+          "wins": 5,
+          "losses": 3,
+          "points": null
+        },
+        {
+          "position": 4,
+          "teamId": "kataja:kba-naiset",
+          "played": 8,
+          "wins": 4,
+          "losses": 4,
+          "points": null
+        },
+        {
+          "position": 5,
+          "teamId": "demo:kba-naiset:D",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 6,
+          "teamId": "demo:kba-naiset:E",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 7,
+          "teamId": "demo:kba-naiset:F",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        },
+        {
+          "position": 8,
+          "teamId": "demo:kba-naiset:G",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        }
+      ],
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/standings/kba-naiset"
+    },
+    {
+      "competitionId": "demo:competition:u14-tytot",
+      "status": "available",
+      "rows": [
+        {
+          "position": 1,
+          "teamId": "demo:u14-tytot:A",
+          "played": 8,
+          "wins": 7,
+          "losses": 1,
+          "points": null
+        },
+        {
+          "position": 2,
+          "teamId": "demo:u14-tytot:B",
+          "played": 8,
+          "wins": 6,
+          "losses": 2,
+          "points": null
+        },
+        {
+          "position": 3,
+          "teamId": "kataja:u14-tytot",
+          "played": 8,
+          "wins": 5,
+          "losses": 3,
+          "points": null
+        },
+        {
+          "position": 4,
+          "teamId": "demo:u14-tytot:C",
+          "played": 8,
+          "wins": 4,
+          "losses": 4,
+          "points": null
+        },
+        {
+          "position": 5,
+          "teamId": "demo:u14-tytot:D",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 6,
+          "teamId": "demo:u14-tytot:E",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 7,
+          "teamId": "demo:u14-tytot:F",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        },
+        {
+          "position": 8,
+          "teamId": "demo:u14-tytot:G",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        }
+      ],
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/standings/u14-tytot"
+    },
+    {
+      "competitionId": "demo:competition:u12-pojat",
+      "status": "available",
+      "rows": [
+        {
+          "position": 1,
+          "teamId": "demo:u12-pojat:A",
+          "played": 8,
+          "wins": 7,
+          "losses": 1,
+          "points": null
+        },
+        {
+          "position": 2,
+          "teamId": "demo:u12-pojat:B",
+          "played": 8,
+          "wins": 6,
+          "losses": 2,
+          "points": null
+        },
+        {
+          "position": 3,
+          "teamId": "demo:u12-pojat:C",
+          "played": 8,
+          "wins": 5,
+          "losses": 3,
+          "points": null
+        },
+        {
+          "position": 4,
+          "teamId": "demo:u12-pojat:D",
+          "played": 8,
+          "wins": 4,
+          "losses": 4,
+          "points": null
+        },
+        {
+          "position": 5,
+          "teamId": "kataja:u12-pojat",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 6,
+          "teamId": "demo:u12-pojat:E",
+          "played": 8,
+          "wins": 3,
+          "losses": 5,
+          "points": null
+        },
+        {
+          "position": 7,
+          "teamId": "demo:u12-pojat:F",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        },
+        {
+          "position": 8,
+          "teamId": "demo:u12-pojat:G",
+          "played": 8,
+          "wins": 2,
+          "losses": 6,
+          "points": null
+        }
+      ],
+      "sourceId": "demo:source",
+      "sourceUrl": "https://example.com/kataja-demo/standings/u12-pojat"
+    }
+  ],
+  "coverage": {
+    "teamIds": [
+      "kataja:edustus",
+      "kataja:kba-miehet",
+      "kataja:kba-naiset",
+      "kataja:u14-tytot",
+      "kataja:u12-pojat"
+    ],
+    "note": "Kaikki tämän esimerkin ottelut, tulokset ja sarjataulukot ovat kuvitteellisia."
+  }
+}
