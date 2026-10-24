@@ -1,0 +1,449 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jukka-matti/katajabasketcommunity/schema/snapshot-v1.schema.json",
+  "title": "Kataja public basketball snapshot v1",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "empty",
+        "demo",
+        "live"
+      ]
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 1000,
+      "format": "date-time"
+    },
+    "timezone": {
+      "type": "string",
+      "const": "Europe/Helsinki"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000,
+            "format": "https-url"
+          },
+          "fetchedAt": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000,
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "url",
+          "fetchedAt"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 20000
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "shortName": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "adult",
+              "junior"
+            ]
+          },
+          "tracked": {
+            "type": "boolean"
+          },
+          "competitionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180,
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+            },
+            "maxItems": 20000,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "shortName",
+          "category",
+          "tracked",
+          "competitionIds"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 20000
+    },
+    "competitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "season": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "phase": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "season",
+          "phase"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 20000
+    },
+    "venues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "city": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "address": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "city",
+          "address"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 20000
+    },
+    "matches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "competitionId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "homeTeamId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "awayTeamId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "startsAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 1000,
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "scheduled",
+              "final",
+              "postponed",
+              "cancelled",
+              "time-tbc"
+            ]
+          },
+          "venueId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "homeScore": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "awayScore": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "sourceId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 3000,
+            "format": "https-url"
+          }
+        },
+        "required": [
+          "id",
+          "competitionId",
+          "homeTeamId",
+          "awayTeamId",
+          "startsAt",
+          "status",
+          "venueId",
+          "homeScore",
+          "awayScore",
+          "sourceId",
+          "sourceUrl"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 20000
+    },
+    "standings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "competitionId": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "not-published",
+              "unavailable"
+            ]
+          },
+          "rows": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "teamId": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 180,
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                },
+                "played": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "wins": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "losses": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "points": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "position",
+                "teamId",
+                "played",
+                "wins",
+                "losses",
+                "points"
+              ],
+              "additionalProperties": false
+            },
+            "maxItems": 20000
+          },
+          "sourceId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "sourceUrl": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 3000,
+            "format": "https-url"
+          }
+        },
+        "required": [
+          "competitionId",
+          "status",
+          "rows",
+          "sourceId",
+          "sourceUrl"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 20000
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "teamIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 180,
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "maxItems": 20000,
+          "uniqueItems": true
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      },
+      "required": [
+        "teamIds",
+        "note"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "mode",
+    "generatedAt",
+    "timezone",
+    "sources",
+    "teams",
+    "competitions",
+    "venues",
+    "matches",
+    "standings",
+    "coverage"
+  ],
+  "additionalProperties": false
+}

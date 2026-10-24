@@ -1,0 +1,310 @@
+:root { color-scheme: light dark; }
+body { margin: 0; background: light-dark(#e9edf4, #0a1422); }
+.site-wrap { max-width: 1140px; margin: 24px auto; }
+button, select, a { touch-action: manipulation; }
+.cursor-interaction { cursor: pointer; }
+button:disabled { cursor: default; }
+#kataja-scoreboard {
+  --ks-bg: light-dark(#f4f6fa, #101a2a);
+  --ks-surface: light-dark(#ffffff, #18263b);
+  --ks-ink: light-dark(#17263d, #edf3ff);
+  --ks-muted: light-dark(#617089, #a6b7d1);
+  --ks-line: light-dark(#e4e9f1, #30425d);
+  --ks-blue: light-dark(#174fbe, #9cbeff);
+  --ks-blue-soft: light-dark(#eaf1ff, #253d62);
+  --ks-navy: light-dark(#0c285b, #071b3e);
+  --ks-navy-text: #f8fbff;
+  --ks-navy-muted: #bccde8;
+  --ks-success: light-dark(#176a4c, #91d7b9);
+  --ks-success-bg: light-dark(#e7f5ed, #1b4035);
+  --ks-loss: light-dark(#a13e3e, #f1aaaa);
+  --ks-loss-bg: light-dark(#faeeee, #492b32);
+  --ks-highlight: light-dark(#edf3ff, #213e65);
+  --ks-demo: light-dark(#6d551e, #ead6a3);
+  --ks-demo-bg: light-dark(#fbf4e1, #302a1b);
+  color: var(--ks-ink); background: var(--ks-bg);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px; line-height: 1.5; border-radius: 18px; overflow: hidden;
+}
+#kataja-scoreboard * { box-sizing: border-box; }
+#kataja-scoreboard [hidden] { display: none !important; }
+#kataja-scoreboard button, #kataja-scoreboard select { font: inherit; }
+#kataja-scoreboard button, #kataja-scoreboard a, #kataja-scoreboard select { -webkit-tap-highlight-color: transparent; }
+#kataja-scoreboard button { color: inherit; }
+#kataja-scoreboard h1, #kataja-scoreboard h2, #kataja-scoreboard h3, #kataja-scoreboard p { margin: 0; }
+#kataja-scoreboard button:focus-visible, #kataja-scoreboard a:focus-visible, #kataja-scoreboard select:focus-visible { outline: 3px solid var(--ks-blue); outline-offset: 3px; }
+#kataja-scoreboard .ks-top { background: var(--ks-navy); color: var(--ks-navy-text); padding: 24px 120px 0 30px; }
+#kataja-scoreboard .ks-brand-row { display: flex; align-items: center; gap: 13px; }
+#kataja-scoreboard .ks-mark { display: grid; place-items: center; width: 43px; height: 43px; flex-shrink: 0; background: #ffffff; color: #123b83; border-radius: 11px; font-size: 29px; line-height: 1; font-weight: 850; font-style: italic; }
+#kataja-scoreboard .ks-brand { font-size: 23px; font-weight: 800; letter-spacing: -.65px; line-height: 1.05; }
+#kataja-scoreboard .ks-brand-sub { font-size: 11px; color: var(--ks-navy-muted); text-transform: uppercase; letter-spacing: 2.3px; margin-top: 5px; }
+#kataja-scoreboard .ks-nav { display: flex; gap: 25px; margin-top: 20px; }
+#kataja-scoreboard .ks-nav button { border: 0; border-bottom: 3px solid transparent; background: none; padding: 10px 0 13px; color: var(--ks-navy-muted); font-size: 14px; font-weight: 600; min-height: 44px; }
+#kataja-scoreboard .ks-nav button[aria-current='page'] { color: var(--ks-navy-text); border-bottom-color: #89b4ff; }
+#kataja-scoreboard .ks-demo { padding: 8px 30px; color: var(--ks-demo); background: var(--ks-demo-bg); font-size: 11px; letter-spacing: .1px; }
+#kataja-scoreboard .ks-content { padding: 27px 30px 25px; }
+#kataja-scoreboard .ks-page-title { font-size: clamp(27px, 4.1vw, 37px); font-weight: 760; letter-spacing: -1.15px; line-height: 1.12; }
+#kataja-scoreboard .ks-page-intro { margin-top: 7px; color: var(--ks-muted); font-size: 14px; }
+#kataja-scoreboard .ks-calendar-layout { display: grid; grid-template-columns: minmax(0, 1fr) 232px; align-items: start; gap: 25px; margin-top: 23px; }
+#kataja-scoreboard .ks-calendar-main { min-width: 0; }
+#kataja-scoreboard .ks-filter-panel { background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 13px; padding: 17px 17px 15px; }
+#kataja-scoreboard .ks-week-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+#kataja-scoreboard .ks-week-overline { font-size: 11px; letter-spacing: 1.05px; text-transform: uppercase; color: var(--ks-muted); font-weight: 650; }
+#kataja-scoreboard .ks-week-label { margin-top: 3px; font-size: 21px; letter-spacing: -.6px; font-weight: 740; font-variant-numeric: tabular-nums; }
+#kataja-scoreboard .ks-arrows { display: flex; gap: 5px; flex-shrink: 0; }
+#kataja-scoreboard .ks-arrow { border: 1px solid var(--ks-line); border-radius: 8px; width: 38px; min-height: 40px; background: var(--ks-surface); color: var(--ks-ink); font-size: 22px; }
+#kataja-scoreboard .ks-arrow:disabled { opacity: .3; }
+#kataja-scoreboard .ks-filter-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 13px; margin-top: 16px; }
+#kataja-scoreboard .ks-field-label { display: block; font-size: 11px; color: var(--ks-muted); margin: 0 0 5px; }
+#kataja-scoreboard .ks-select { width: 100%; min-height: 41px; padding: 8px 29px 8px 10px; border: 1px solid var(--ks-line); border-radius: 7px; color: var(--ks-ink); background: var(--ks-bg); font-size: 13px; }
+#kataja-scoreboard .ks-segment { display: flex; min-height: 41px; padding: 3px; border-radius: 7px; background: var(--ks-bg); border: 1px solid var(--ks-line); }
+#kataja-scoreboard .ks-segment button { min-width: 0; flex: 1; background: none; border: 0; border-radius: 5px; color: var(--ks-muted); font-size: 12px; white-space: nowrap; padding: 6px 9px; }
+#kataja-scoreboard .ks-segment button[aria-pressed='true'] { background: var(--ks-surface); color: var(--ks-blue); box-shadow: 0 1px 4px #00000010; font-weight: 650; }
+#kataja-scoreboard .ks-list-meta { margin: 15px 1px 0; color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-day-header { display: flex; align-items: center; gap: 12px; margin: 23px 0 10px; }
+#kataja-scoreboard .ks-day-header h2 { font-size: 12px; font-weight: 750; text-transform: uppercase; letter-spacing: .75px; }
+#kataja-scoreboard .ks-day-header::after { content: ''; flex: 1; height: 1px; background: var(--ks-line); }
+#kataja-scoreboard .ks-game { display: grid; grid-template-columns: 74px minmax(0,1fr) auto; gap: 16px; padding: 16px 16px; margin-bottom: 8px; background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 11px; align-items: center; }
+#kataja-scoreboard .ks-time { font-size: 24px; font-weight: 760; letter-spacing: -.8px; line-height: 1.15; font-variant-numeric: tabular-nums; align-self: start; margin-top: 4px; }
+#kataja-scoreboard .ks-time small { display: block; font-size: 11px; font-weight: 500; color: var(--ks-muted); letter-spacing: 0; margin-top: 6px; }
+#kataja-scoreboard .ks-game-info { min-width: 0; }
+#kataja-scoreboard .ks-category { color: var(--ks-blue); font-size: 11px; font-weight: 650; letter-spacing: .1px; }
+#kataja-scoreboard .ks-game-link { display: block; text-align: left; padding: 0; margin: 4px 0 5px; font-size: 15px; font-weight: 730; letter-spacing: -.25px; line-height: 1.35; border: 0; background: none; overflow-wrap: anywhere; }
+#kataja-scoreboard .ks-game-link:hover { color: var(--ks-blue); text-decoration: underline; text-underline-offset: 3px; }
+#kataja-scoreboard .ks-place { font-size: 11px; color: var(--ks-muted); }
+#kataja-scoreboard .ks-map { display: inline-flex; align-items: center; justify-content: center; padding: 8px 10px; min-height: 36px; border-radius: 7px; background: var(--ks-blue-soft); color: var(--ks-blue); text-decoration: none; font-size: 11px; font-weight: 650; white-space: nowrap; }
+#kataja-scoreboard .ks-aside { padding-top: 1px; }
+#kataja-scoreboard .ks-section-label { margin: 0 0 11px; font-size: 12px; font-weight: 750; text-transform: uppercase; letter-spacing: .75px; }
+#kataja-scoreboard .ks-mini-team { display: flex; width: 100%; align-items: center; text-align: left; gap: 10px; background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 10px; padding: 12px; margin-bottom: 7px; }
+#kataja-scoreboard .ks-mini-team:hover, #kataja-scoreboard .ks-team-card:hover { border-color: var(--ks-blue); }
+#kataja-scoreboard .ks-small-mark { width: 30px; height: 34px; flex-shrink: 0; border-radius: 7px; background: var(--ks-blue-soft); color: var(--ks-blue); display: grid; place-items: center; font-size: 12px; font-weight: 800; letter-spacing: -.4px; }
+#kataja-scoreboard .ks-mini-name { display: block; font-size: 12px; font-weight: 700; }
+#kataja-scoreboard .ks-mini-meta { display: block; margin-top: 3px; font-size: 11px; color: var(--ks-muted); }
+#kataja-scoreboard .ks-mini-arrow { margin-left: auto; color: var(--ks-muted); }
+#kataja-scoreboard .ks-aside-note { color: var(--ks-muted); font-size: 11px; line-height: 1.6; padding: 10px 2px 0; }
+#kataja-scoreboard .ks-empty { padding: 28px 16px; color: var(--ks-muted); font-size: 13px; }
+#kataja-scoreboard .ks-team-grid { margin-top: 25px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+#kataja-scoreboard .ks-team-card { display: block; text-align: left; padding: 20px; border: 1px solid var(--ks-line); border-radius: 13px; background: var(--ks-surface); }
+#kataja-scoreboard .ks-team-card-top { display: flex; align-items: center; gap: 12px; }
+#kataja-scoreboard .ks-team-card .ks-small-mark { width: 40px; height: 43px; font-size: 16px; }
+#kataja-scoreboard .ks-team-card h2 { font-size: 19px; font-weight: 740; letter-spacing: -.45px; }
+#kataja-scoreboard .ks-team-card-sub { color: var(--ks-muted); font-size: 11px; margin-top: 2px; }
+#kataja-scoreboard .ks-team-card-bottom { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-top: 20px; border-top: 1px solid var(--ks-line); padding-top: 13px; font-size: 12px; }
+#kataja-scoreboard .ks-team-card-bottom span:last-child { color: var(--ks-blue); font-weight: 650; }
+#kataja-scoreboard .ks-back-row { display: flex; gap: 12px; justify-content: space-between; align-items: center; margin: -5px 0 23px; }
+#kataja-scoreboard .ks-back { background: none; border: 0; color: var(--ks-blue); padding: 7px 0; font-size: 12px; font-weight: 650; min-height: 40px; text-align: left; }
+#kataja-scoreboard .ks-detail-select { max-width: 200px; }
+#kataja-scoreboard .ks-team-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 23px; }
+#kataja-scoreboard .ks-overline { color: var(--ks-blue); font-size: 11px; letter-spacing: 1.15px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+#kataja-scoreboard .ks-team-stats { display: flex; gap: 24px; flex-shrink: 0; }
+#kataja-scoreboard .ks-team-stat-value { font-size: 30px; font-weight: 760; line-height: 1; letter-spacing: -1px; font-variant-numeric: tabular-nums; }
+#kataja-scoreboard .ks-team-stat-label { margin-top: 7px; color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-next { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 18px; padding: 22px 24px; background: var(--ks-navy); color: var(--ks-navy-text); border-radius: 13px; }
+#kataja-scoreboard .ks-next .ks-overline { color: var(--ks-navy-muted); margin-bottom: 8px; }
+#kataja-scoreboard .ks-next h2 { font-size: 25px; line-height: 1.22; font-weight: 740; letter-spacing: -.55px; }
+#kataja-scoreboard .ks-next-meta { margin-top: 9px; color: var(--ks-navy-muted); font-size: 12px; }
+#kataja-scoreboard .ks-next-right { text-align: right; }
+#kataja-scoreboard .ks-next-time { font-size: 26px; font-weight: 750; line-height: 1.15; letter-spacing: -.65px; font-variant-numeric: tabular-nums; }
+#kataja-scoreboard .ks-next-day { color: var(--ks-navy-muted); font-size: 12px; margin: 4px 0 13px; }
+#kataja-scoreboard .ks-next .ks-map { color: #153e81; background: #f2f6ff; }
+#kataja-scoreboard .ks-detail-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 18px; margin-top: 23px; align-items: start; }
+#kataja-scoreboard .ks-panel { background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 12px; overflow: hidden; min-width: 0; }
+#kataja-scoreboard .ks-panel-heading { padding: 17px 18px 12px; }
+#kataja-scoreboard .ks-panel-heading h2 { font-size: 17px; font-weight: 740; letter-spacing: -.3px; }
+#kataja-scoreboard .ks-panel-heading p { color: var(--ks-muted); font-size: 11px; margin-top: 4px; }
+#kataja-scoreboard .ks-standings { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 12px; }
+#kataja-scoreboard .ks-standings th { font-size: 11px; color: var(--ks-muted); font-weight: 600; border-bottom: 1px solid var(--ks-line); }
+#kataja-scoreboard .ks-standings th, #kataja-scoreboard .ks-standings td { padding: 10px 4px; text-align: center; font-variant-numeric: tabular-nums; }
+#kataja-scoreboard .ks-standings tr:not(:last-child) td { border-bottom: 1px solid var(--ks-line); }
+#kataja-scoreboard .ks-standings th:first-child, #kataja-scoreboard .ks-standings td:first-child { width: 33px; padding-left: 11px; }
+#kataja-scoreboard .ks-standings th:nth-child(2), #kataja-scoreboard .ks-standings td:nth-child(2) { width: auto; text-align: left; overflow-wrap: anywhere; padding-left: 6px; }
+#kataja-scoreboard .ks-standings th:nth-child(n+3), #kataja-scoreboard .ks-standings td:nth-child(n+3) { width: 34px; }
+#kataja-scoreboard .ks-standings th:last-child, #kataja-scoreboard .ks-standings td:last-child { padding-right: 12px; width: 42px; }
+#kataja-scoreboard .ks-standings .ks-own-row { background: var(--ks-highlight); color: var(--ks-blue); font-weight: 750; }
+#kataja-scoreboard .ks-table-note { border-top: 1px solid var(--ks-line); padding: 10px 17px; color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-result { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 12px; align-items: center; padding: 12px 18px; border-top: 1px solid var(--ks-line); }
+#kataja-scoreboard .ks-result-name { font-size: 12px; font-weight: 650; }
+#kataja-scoreboard .ks-result-meta { margin-top: 3px; color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-result-right { text-align: right; }
+#kataja-scoreboard .ks-score { font-size: 19px; font-weight: 730; letter-spacing: -.4px; font-variant-numeric: tabular-nums; }
+#kataja-scoreboard .ks-result-label { display: inline-block; border-radius: 4px; padding: 2px 6px; margin-top: 4px; font-size: 11px; font-weight: 650; }
+#kataja-scoreboard .ks-result-win { background: var(--ks-success-bg); color: var(--ks-success); }
+#kataja-scoreboard .ks-result-loss { background: var(--ks-loss-bg); color: var(--ks-loss); }
+#kataja-scoreboard .ks-upcoming { margin-top: 25px; }
+#kataja-scoreboard .ks-upcoming-heading { font-size: 17px; font-weight: 740; letter-spacing: -.3px; margin-bottom: 12px; }
+#kataja-scoreboard .ks-upcoming-row { display: grid; grid-template-columns: 86px minmax(0,1fr) auto; gap: 16px; padding: 15px 0; align-items: center; border-top: 1px solid var(--ks-line); }
+#kataja-scoreboard .ks-upcoming-date { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+#kataja-scoreboard .ks-upcoming-date small { display: block; margin-top: 3px; color: var(--ks-muted); font-size: 11px; font-weight: 500; }
+#kataja-scoreboard .ks-upcoming-name { font-size: 13px; font-weight: 650; }
+#kataja-scoreboard .ks-upcoming-place { font-size: 11px; color: var(--ks-muted); margin-top: 3px; }
+#kataja-scoreboard .ks-footer { padding: 15px 30px 19px; border-top: 1px solid var(--ks-line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 15px; color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-announcement { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 800px) {
+  #kataja-scoreboard .ks-calendar-layout { grid-template-columns: minmax(0,1fr); }
+  #kataja-scoreboard .ks-aside { display: none; }
+  #kataja-scoreboard .ks-detail-grid { gap: 14px; }
+}
+@media (max-width: 560px) {
+  #kataja-scoreboard .ks-top { padding: 20px 105px 0 18px; }
+  #kataja-scoreboard .ks-demo { padding: 8px 18px; font-size: 11px; }
+  #kataja-scoreboard .ks-content { padding: 23px 18px; }
+  #kataja-scoreboard .ks-brand { font-size: 21px; }
+  #kataja-scoreboard .ks-brand-sub { font-size: 11px; letter-spacing: 1.5px; }
+  #kataja-scoreboard .ks-mark { width: 37px; height: 39px; font-size: 26px; }
+  #kataja-scoreboard .ks-page-title { font-size: 29px; }
+  #kataja-scoreboard .ks-page-intro { font-size: 12px; }
+  #kataja-scoreboard .ks-calendar-layout { margin-top: 20px; }
+  #kataja-scoreboard .ks-filter-panel { padding: 15px 13px; }
+  #kataja-scoreboard .ks-week-label { font-size: 19px; }
+  #kataja-scoreboard .ks-filter-row { grid-template-columns: minmax(0,1fr); gap: 10px; }
+  #kataja-scoreboard .ks-field-label { font-size: 11px; }
+  #kataja-scoreboard .ks-select { font-size: 16px; min-height: 44px; }
+  #kataja-scoreboard .ks-segment { min-height: 44px; }
+  #kataja-scoreboard .ks-segment button { font-size: 13px; }
+  #kataja-scoreboard .ks-arrow { min-height: 44px; min-width: 40px; }
+  #kataja-scoreboard .ks-game { grid-template-columns: 74px minmax(0,1fr); gap: 8px 14px; padding: 15px 13px; }
+  #kataja-scoreboard .ks-game .ks-map { grid-column: 2; justify-self: start; min-height: 44px; }
+  #kataja-scoreboard .ks-game-link { font-size: 15px; }
+  #kataja-scoreboard .ks-place { font-size: 11px; }
+  #kataja-scoreboard .ks-category { font-size: 11px; }
+  #kataja-scoreboard .ks-team-grid { grid-template-columns: minmax(0,1fr); }
+  #kataja-scoreboard .ks-back-row { align-items: start; flex-wrap: wrap; margin-bottom: 18px; }
+  #kataja-scoreboard .ks-detail-select { max-width: 100%; width: 100%; }
+  #kataja-scoreboard .ks-team-head { align-items: start; flex-direction: column; gap: 18px; }
+  #kataja-scoreboard .ks-team-stats { gap: 33px; }
+  #kataja-scoreboard .ks-team-stat-value { font-size: 28px; }
+  #kataja-scoreboard .ks-next { grid-template-columns: minmax(0,1fr); padding: 19px; gap: 17px; }
+  #kataja-scoreboard .ks-next h2 { font-size: 23px; }
+  #kataja-scoreboard .ks-next-right { text-align: left; display: grid; grid-template-columns: 1fr auto; gap: 3px 10px; align-items: center; }
+  #kataja-scoreboard .ks-next-time { font-size: 25px; }
+  #kataja-scoreboard .ks-next-day { grid-column: 1; margin: 0; }
+  #kataja-scoreboard .ks-next .ks-map { grid-column: 2; grid-row: 1 / 3; min-height: 44px; }
+  #kataja-scoreboard .ks-detail-grid { grid-template-columns: minmax(0,1fr); margin-top: 18px; gap: 17px; }
+  #kataja-scoreboard .ks-standings { font-size: 13px; }
+  #kataja-scoreboard .ks-standings th, #kataja-scoreboard .ks-standings td { padding-top: 11px; padding-bottom: 11px; }
+  #kataja-scoreboard .ks-upcoming-row { grid-template-columns: 67px minmax(0,1fr); gap: 10px; }
+  #kataja-scoreboard .ks-upcoming-row .ks-map { grid-column: 2; justify-self: start; min-height: 44px; }
+  #kataja-scoreboard .ks-footer { padding: 14px 18px; }
+}
+@media (pointer: coarse) {
+  #kataja-scoreboard .ks-game-link, #kataja-scoreboard .ks-back { min-height: 44px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #kataja-scoreboard .ks-mini-team, #kataja-scoreboard .ks-team-card, #kataja-scoreboard .ks-map { transition: border-color .15s, background .15s; }
+}
+
+/* Standalone navigation, data states and source-backed content. */
+#kataja-scoreboard .ks-top { padding-right: 30px; }
+#kataja-scoreboard .ks-nav a { display: inline-flex; align-items: center; border-bottom: 3px solid transparent; padding: 10px 0 13px; min-height: 44px; color: var(--ks-navy-muted); font-size: 14px; font-weight: 600; text-decoration: none; }
+#kataja-scoreboard .ks-nav a[aria-current='page'] { color: var(--ks-navy-text); border-bottom-color: #89b4ff; }
+#kataja-scoreboard .ks-top a:focus-visible { outline-color: #bcd3ff; }
+#kataja-scoreboard .ks-demo { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 16px; }
+#kataja-scoreboard .ks-demo button { background: transparent; border: 0; padding: 8px 0; min-height: 36px; font-size: 11px; font-weight: 650; cursor: pointer; text-align: left; }
+#kataja-scoreboard .ks-data-status { display: grid; gap: 4px; padding: 12px 30px; border-bottom: 1px solid var(--ks-line); background: var(--ks-surface); color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-data-stale { color: var(--ks-demo); background: var(--ks-demo-bg); }
+#kataja-scoreboard .ks-data-stale strong { font-weight: 600; }
+#kataja-scoreboard .ks-status-view { max-width: 710px; min-height: 340px; padding: 42px 0 56px; }
+#kataja-scoreboard .ks-status-view .ks-page-title { max-width: 650px; }
+#kataja-scoreboard .ks-status-view .ks-page-intro { max-width: 560px; margin-top: 18px; line-height: 1.7; }
+#kataja-scoreboard .ks-status-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+#kataja-scoreboard .ks-primary, #kataja-scoreboard .ks-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 11px 17px; border: 1px solid var(--ks-line); border-radius: 8px; font-size: 13px; font-weight: 650; text-decoration: none; cursor: pointer; }
+#kataja-scoreboard .ks-primary { background: var(--ks-navy); color: var(--ks-navy-text); border-color: var(--ks-navy); }
+#kataja-scoreboard .ks-secondary { background: var(--ks-surface); color: var(--ks-blue); }
+#kataja-scoreboard .ks-coverage { display: grid; gap: 5px; margin: 20px 0; padding: 14px 16px; background: var(--ks-blue-soft); border-radius: 9px; color: var(--ks-ink); font-size: 12px; line-height: 1.6; }
+#kataja-scoreboard .ks-coverage strong { font-weight: 650; }
+#kataja-scoreboard .ks-today { border: 0; background: transparent; padding: 6px 0; min-height: 36px; color: var(--ks-blue); font-size: 12px; font-weight: 650; cursor: pointer; }
+#kataja-scoreboard .ks-game-match { margin: 4px 0 5px; font-size: 15px; font-weight: 730; letter-spacing: -.25px; line-height: 1.35; overflow-wrap: anywhere; }
+#kataja-scoreboard .ks-team-name { color: inherit; text-decoration: none; text-underline-offset: 3px; }
+#kataja-scoreboard .ks-team-name:hover { color: var(--ks-blue); text-decoration: underline; }
+#kataja-scoreboard .ks-mini-team, #kataja-scoreboard .ks-team-card { color: inherit; text-decoration: none; }
+#kataja-scoreboard .ks-mini-team > span:nth-child(2) { min-width: 0; overflow-wrap: anywhere; }
+#kataja-scoreboard .ks-mini-arrow { flex-shrink: 0; }
+#kataja-scoreboard .ks-team-card-bottom { flex-wrap: wrap; }
+#kataja-scoreboard .ks-back { display: inline-flex; align-items: center; text-decoration: none; }
+#kataja-scoreboard .ks-back:hover { text-decoration: underline; text-underline-offset: 3px; }
+#kataja-scoreboard .ks-source-meta { color: var(--ks-muted); font-size: 11px; line-height: 1.6; margin-top: 7px; overflow-wrap: anywhere; }
+#kataja-scoreboard .ks-source-meta a { color: var(--ks-blue); text-underline-offset: 3px; }
+#kataja-scoreboard .ks-next .ks-source-meta, #kataja-scoreboard .ks-next .ks-source-meta a { color: var(--ks-navy-muted); }
+#kataja-scoreboard .ks-panel > .ks-source-meta { padding: 0 18px 13px; }
+#kataja-scoreboard .ks-status-tag { display: inline-block; background: var(--ks-blue-soft); color: var(--ks-blue); padding: 3px 6px; margin-top: 7px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+#kataja-scoreboard .ks-status-warning { background: var(--ks-demo-bg); color: var(--ks-demo); }
+#kataja-scoreboard .ks-cancelled { border-style: dashed; }
+#kataja-scoreboard .ks-list-note, #kataja-scoreboard .ks-undated-note { margin: 14px 0; color: var(--ks-muted); font-size: 12px; line-height: 1.6; }
+#kataja-scoreboard .ks-list-note a, #kataja-scoreboard .ks-team-calendar-link { color: var(--ks-blue); text-underline-offset: 3px; }
+#kataja-scoreboard .ks-panel-empty { padding: 15px 18px 20px; color: var(--ks-muted); font-size: 13px; line-height: 1.65; }
+#kataja-scoreboard .ks-next-empty { padding: 23px; background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 12px; }
+#kataja-scoreboard .ks-next-empty h2 { font-size: 19px; }
+#kataja-scoreboard .ks-next-empty p { color: var(--ks-muted); font-size: 13px; margin-top: 8px; }
+#kataja-scoreboard .ks-result-draw { color: var(--ks-muted); background: var(--ks-bg); }
+#kataja-scoreboard .ks-team-calendar-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 15px; font-size: 13px; font-weight: 650; text-decoration: none; }
+#kataja-scoreboard .ks-team-calendar-link:hover { text-decoration: underline; }
+#kataja-scoreboard .ks-competition-select { display: block; max-width: 560px; margin-bottom: 22px; }
+.ks-noscript { max-width: 700px; margin: 30px auto; padding: 20px; font-family: ui-sans-serif, sans-serif; }
+#kataja-scoreboard .ks-events-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; margin-top: 28px; }
+#kataja-scoreboard .ks-event-card { display: flex; flex-direction: column; align-items: start; gap: 15px; color: var(--ks-ink); text-decoration: none; padding: 27px; border-radius: 13px; border: 1px solid var(--ks-line); background: var(--ks-surface); min-width: 0; }
+#kataja-scoreboard .ks-event-card:hover { border-color: var(--ks-blue); }
+#kataja-scoreboard .ks-event-badge { display: inline-block; border-radius: 5px; padding: 4px 8px; background: var(--ks-blue-soft); color: var(--ks-blue); font-size: 11px; font-weight: 650; letter-spacing: .5px; text-transform: uppercase; }
+#kataja-scoreboard .ks-event-card h2 { font-size: 29px; line-height: 1.15; letter-spacing: -.8px; }
+#kataja-scoreboard .ks-event-card p { color: var(--ks-muted); font-size: 13px; line-height: 1.7; }
+#kataja-scoreboard .ks-event-card-link { color: var(--ks-blue); font-size: 13px; font-weight: 650; padding-top: 8px; margin-top: auto; }
+#kataja-scoreboard .ks-event-hero { position: relative; overflow: hidden; padding: 36px; margin-top: 3px; color: var(--ks-navy-text); background: var(--ks-navy); border-radius: 14px; }
+#kataja-scoreboard .ks-event-hero .ks-overline { color: var(--ks-navy-muted); }
+#kataja-scoreboard .ks-event-hero .ks-page-title { max-width: 730px; font-size: clamp(34px, 5vw, 51px); }
+#kataja-scoreboard .ks-event-lead { max-width: 680px; color: #d7e3f7; font-size: 16px; line-height: 1.65; margin-top: 17px; }
+#kataja-scoreboard .ks-event-intro { max-width: 760px; margin: 25px 0; color: var(--ks-muted); font-size: 14px; line-height: 1.8; }
+#kataja-scoreboard .ks-event-intro p + p { margin-top: 12px; }
+#kataja-scoreboard .ks-event-section { margin-top: 31px; }
+#kataja-scoreboard .ks-event-section > h2 { font-size: 24px; line-height: 1.2; letter-spacing: -.6px; margin-bottom: 14px; }
+#kataja-scoreboard .ks-edition-card { padding: 22px 24px; background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 12px; }
+#kataja-scoreboard .ks-edition-heading { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+#kataja-scoreboard .ks-edition-heading h3 { font-size: 22px; letter-spacing: -.5px; }
+#kataja-scoreboard .ks-edition-notice { color: var(--ks-muted); font-size: 13px; line-height: 1.7; margin-top: 10px; }
+#kataja-scoreboard .ks-edition-meta { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 18px; font-size: 13px; }
+#kataja-scoreboard .ks-edition-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 16px; }
+#kataja-scoreboard .ks-edition-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 17px; }
+#kataja-scoreboard .ks-edition-panel { padding: 20px; border: 1px solid var(--ks-line); border-radius: 11px; background: var(--ks-surface); min-width: 0; }
+#kataja-scoreboard .ks-edition-panel h3 { font-size: 17px; letter-spacing: -.3px; }
+#kataja-scoreboard .ks-event-missing { margin-top: 12px; color: var(--ks-muted); font-size: 12px; line-height: 1.7; }
+#kataja-scoreboard .ks-event-list { margin: 13px 0 0; padding: 0; list-style: none; }
+#kataja-scoreboard .ks-event-list li { padding: 10px 0; border-top: 1px solid var(--ks-line); font-size: 13px; overflow-wrap: anywhere; }
+#kataja-scoreboard .ks-event-list li:first-child { border-top: 0; padding-top: 0; }
+#kataja-scoreboard .ks-event-list small { display: block; margin-top: 3px; color: var(--ks-muted); font-size: 11px; }
+#kataja-scoreboard .ks-history-list { display: grid; gap: 13px; }
+#kataja-scoreboard .ks-history-item { display: grid; grid-template-columns: 72px minmax(0,1fr); align-items: start; gap: 20px; padding: 22px 24px; background: var(--ks-surface); border: 1px solid var(--ks-line); border-radius: 12px; }
+#kataja-scoreboard .ks-history-year { font-size: 25px; font-weight: 750; color: var(--ks-blue); font-variant-numeric: tabular-nums; letter-spacing: -.5px; }
+#kataja-scoreboard .ks-history-item h3 { font-size: 18px; letter-spacing: -.3px; }
+#kataja-scoreboard .ks-history-item p { margin-top: 7px; color: var(--ks-muted); font-size: 13px; line-height: 1.75; }
+#kataja-scoreboard .ks-event-sources { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--ks-line); }
+#kataja-scoreboard .ks-event-sources h2 { font-size: 15px; }
+#kataja-scoreboard .ks-event-sources ul { padding-left: 18px; margin: 12px 0 0; }
+#kataja-scoreboard .ks-event-sources li { margin-bottom: 8px; color: var(--ks-muted); font-size: 12px; }
+#kataja-scoreboard .ks-event-sources a { color: var(--ks-blue); text-underline-offset: 3px; }
+@media (max-width: 1180px) {
+  .site-wrap { margin: 20px; }
+}
+@media (max-width: 560px) {
+  .site-wrap { margin: 0; }
+  #kataja-scoreboard { border-radius: 0; }
+  #kataja-scoreboard .ks-top { padding-right: 18px; }
+  #kataja-scoreboard .ks-nav { gap: 24px; }
+  #kataja-scoreboard .ks-demo button { min-height: 40px; }
+  #kataja-scoreboard .ks-data-status { padding: 11px 18px; }
+  #kataja-scoreboard .ks-status-view { min-height: 360px; padding: 27px 0 35px; }
+  #kataja-scoreboard .ks-status-view .ks-page-intro { font-size: 14px; }
+  #kataja-scoreboard .ks-week-row > div:first-child { min-width: 0; }
+  #kataja-scoreboard .ks-week-overline { font-size: 10px; letter-spacing: .5px; }
+  #kataja-scoreboard .ks-week-label { font-size: 18px; white-space: nowrap; }
+  #kataja-scoreboard .ks-game-match { font-size: 15px; }
+  #kataja-scoreboard .ks-upcoming-name { overflow-wrap: anywhere; }
+  #kataja-scoreboard .ks-panel-empty { font-size: 12px; }
+  #kataja-scoreboard .ks-events-grid { grid-template-columns: minmax(0,1fr); gap: 14px; margin-top: 23px; }
+  #kataja-scoreboard .ks-event-card { padding: 23px; }
+  #kataja-scoreboard .ks-event-card h2 { font-size: 27px; }
+  #kataja-scoreboard .ks-event-hero { padding: 25px 22px; }
+  #kataja-scoreboard .ks-event-hero .ks-page-title { font-size: 35px; }
+  #kataja-scoreboard .ks-event-lead { font-size: 14px; }
+  #kataja-scoreboard .ks-event-intro { font-size: 13px; }
+  #kataja-scoreboard .ks-edition-card { padding: 20px; }
+  #kataja-scoreboard .ks-edition-grid { grid-template-columns: minmax(0,1fr); }
+  #kataja-scoreboard .ks-history-item { grid-template-columns: minmax(0,1fr); gap: 7px; padding: 20px; }
+}
